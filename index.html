@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <title>Vue Calculate Product</title>
+</head>
+<body>
+  <div id="vue-test" class="container">
+    <button @click='message = !message'> {{ message ? "Hide Message" : "Show Message" }} </button>
+    
+    <!-- https://vuejs.org/v2/guide/transitions.html => transition Link -->
+    <transition name='fade'>
+      <div class="the-message" v-if='message'>This Is At Alert! </div>
+    </transition>
+  </div>
+
+  <script src="js/vue.js"></script>
+  <script>
+    var app = new Vue({
+      el: '#vue-test',
+      data: {
+        message: true
+      }
+    });
+  </script>
+</body>
+</html>

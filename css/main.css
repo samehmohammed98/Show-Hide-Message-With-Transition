@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+}
+.container {
+  text-align: center;
+}
+.the-message {
+  padding: 20px;
+  background-color: #eee;
+  max-width: 400px;
+  margin: 20px auto;
+  font-weight: bold;
+}
+.container button {
+  padding: 10px;
+  background-color: #2196f2;
+  color: #fff;
+  border-color: transparent;
+  cursor: pointer;
+  outline: none;
+}
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
+}
